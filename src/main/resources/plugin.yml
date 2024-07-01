@@ -1,0 +1,15 @@
+name: BackupPlugin
+version: '${project.version}'
+main: com.ashkiano.backupplugin.BackupPlugin
+api-version: 1.16
+authors: [ AshKiano ]
+commands:
+  backupConfigs:
+    description: Back up all plugin config files
+    usage: /backupConfigs
+    permission: backupplugin.backup
+    permission-message: You do not have permission to use this command.
+permissions:
+  backupplugin.backup:
+    description: Allows the player to backup all plugin config files
+    default: op
